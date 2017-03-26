@@ -532,9 +532,6 @@ func (sm *SourceMgr) getSourceFor(id ProjectIdentifier) (source, error) {
 	src, has := sm.srcs[nn]
 	sm.srcmut.RUnlock()
 	if has {
-		if src == nil {
-			return nil, fmt.Errorf("no src 1")
-		}
 		return src, nil
 	}
 
@@ -546,9 +543,6 @@ func (sm *SourceMgr) getSourceFor(id ProjectIdentifier) (source, error) {
 	// we don't care about the ident here, and the future produced by
 	// deducePathAndProcess will dedupe with what's in the sm.srcs map
 	src, _, err = ft.srcf()
-	if err == nil && src == nil {
-		return nil, fmt.Errorf("no src 2")
-	}
 	return src, err
 }
 

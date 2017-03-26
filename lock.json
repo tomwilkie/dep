@@ -1,5 +1,5 @@
 {
-    "memo": "fc012dfb266db9deec4121dd38069e2556ba66a5514939662da94fac1251996e",
+    "memo": "dd7782503f94ea4f3c17b4ce6795480b02b24a389bb05db3acaa273c71e66766",
     "projects": [
         {
             "name": "github.com/Masterminds/semver",
@@ -35,8 +35,7 @@
         },
         {
             "name": "github.com/sdboyer/gps",
-            "version": "v0.14.1",
-            "revision": "287edec9f4ca516577cc3ac9744068a34c4c7b08",
+            "revision": "eba751a",
             "packages": [
                 "."
             ]

@@ -96,7 +96,7 @@ type vcsError struct {
 
 // Error implements the Error interface
 func (e *vcsError) Error() string {
-	return fmt.Sprintf("%s: %v, %s", e.s, e.e, e.o)
+	return fmt.Sprintf("%s: %v, '%s'", e.s, e.e, e.o)
 }
 
 // Original retrieves the underlying implementation specific error.
